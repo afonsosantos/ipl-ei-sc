@@ -22,7 +22,7 @@
 
     ; ouput to console
     sd r3, (r21)                    ; save r3 in memory address of r21
-    daddi r4, r0, 1                 ; assign 1 to r4
+    daddi r4, r0, 1                 ; assign 1 (unsigned integer) to r4
     sd r4, (r20)                    ; save r4 in memory address of r20
 
     sd r3, C(r0)
