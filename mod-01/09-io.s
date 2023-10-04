@@ -11,7 +11,7 @@
 
     lwu r1, CR(r0)                  ; output registries
     lwu r2, DR(r0)
-
+    
     ld r3, A(r0)                    ; load A (-4) into r3
 
                                     ; ouput to console
