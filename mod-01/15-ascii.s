@@ -59,7 +59,7 @@ different:                                  ; code to execute is below
 
 show:
 
-    daddi r0, r0, 2
+    daddi r3, r0, 2
     sd r7, (r2)                             ; value for DR
     sd r3, (r1)                             ; value for CR
 
