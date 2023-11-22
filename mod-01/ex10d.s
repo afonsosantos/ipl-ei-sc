@@ -27,6 +27,8 @@ main:
 	sd $s3,($s1)
 	ld $s5, 0($s2)
 
+daddi $s0, $zero, 0xDAD
+
 ; pilha
 
 	daddi $sp, $sp, -16 ; 2 elementos
