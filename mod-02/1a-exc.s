@@ -9,13 +9,10 @@
 
 	daddi	R1,R0,0			; inicializa i
 	ld	R5,C(R0)			; carrega o valor de C
-	daddi	R9,R0,8			; tamanho da dword para multiplicação pelo índice
 	
 loop:
 
-	dmul	R2,R1,R9		; R2 = offset de i
-
-	; 6 bolhas (r2)
+	dsll r2, r1, 3
 	ld	R4,B(R2)			; carrega o valor de B[i]
 	
 	; 1 bolha (r4)
