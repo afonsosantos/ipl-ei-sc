@@ -19,12 +19,12 @@ loop:
 	ld	R4,B(R2)			; carrega o valor de B[i] 
 	ld	R5,C(R0)			; carrega o valor de C 
 
-	dadd	R6,R4,R5		; B[i]+C 
+	dadd	R6,R4,R5		; B[i] + C 
 
 	ld	R1,i(R0)			; obtém o valor de i 
 	daddi	R9,R0,8			; tamanho da dword para multiplicação pelo índice
 	dmul	R2,R1,R9		; R2 = offset de i
-	sd	r6,A(r2)			; A[i] = B[i]+C 
+	sd	r6,A(r2)			; A[i] = B[i] + C 
 
 	ld	R1,i(R0)			; obtém o valor de i 
 	daddi	R1,R1,1			; incrementa i 
